@@ -1,0 +1,15 @@
+<h3><a href="/lyrics">Go to search</a></h3>
+<h3>Your favorite lyrics:</h3>
+<div class="all-added-lyrics">
+  {{#each lyrics}}
+  <div class="my-add-lyrics">
+  <div class="title-add-lyrics">{{title}}</div>
+  <div class="artist-add-lyrics">{{artist}}</div>
+  <div class="album-add-lyrics">{{album}}</div>
+  <div class="add-lyrics">{{text}}</div>
+  <a id="delete" class="waves-effect waves-light btn-small red darken-1" href="/dashboard/lyrics/{{_id}}">Delete</a>
+  </div>
+  {{/each}}
+</div>
+
+<script defer src="/js/dashboard.js"></script>

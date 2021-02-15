@@ -1,0 +1,33 @@
+<div class="search-form-container">
+  <form class="search-form" action="/lyrics/songs" method="POST" name="searchForm" autocomplete="off">
+    <div class="column-s ">
+      <div class="input-field col s6">
+        <input placeholder="Artist" name="artist" id="first_name" type="text" class="validate blue-grey lighten-2">
+      </div>
+
+      <div class="input-field col s6 inp-search">
+        <input placeholder="Title of the song" name="title" id="password" type="text"
+          class="validate blue-grey lighten-2">
+      </div>
+      <button class="waves-effect waves-light btn-small blue-grey darken-2">Search</button>
+    </div>
+  </form>
+
+
+<div>
+  <div class="lyrics">
+<div id="tite"></div>
+<div id="artist"></div>
+<div id="album"></div>
+<div id="genre"></div>
+<div id="text"></div>
+  </div>
+<form class="add-to-favo" action="/lyrics/favosongs" method="POST" name="saveSong">
+<button class="waves-effect waves-light btn-small blue-grey darken-2">Add to favorites</button><i class="small material-icons">favorite</i>  
+</form>
+</div>
+
+</div>
+
+<script defer src="/js/lyrics.js"></script>
+

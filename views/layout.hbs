@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link defer rel="stylesheet" href="/css/style.css" type="text/css">
+  <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link defer href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <title>Song lyrics search</title>
+</head>
+<body>
+<nav class="nav-extended grey lighten-2">
+  <div class="nav-wrapper">
+    <img src="/img/Logo.png" class="logotype" alt="">
+    <ul class="right hide-on-med-and-down">
+      {{#unless user}}
+      <li> <a href="/login">Log In</a></li>
+      {{/unless}}
+      {{#if user}}
+      <li><a href="/dashboard">Hello, {{user.username}}</a></li>
+      <li><a href="/lyrics/logout">Log Out</a></li>
+      {{/if}}
+    </ul>
+  </div>
+  <div class="nav-content">
+
+  </div>
+</nav>
+{{{body}}}
+</body>
+
+</html>
