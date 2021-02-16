@@ -1,4 +1,4 @@
-# song-lyrics-search
+# Song Lyrics Search
 
 ![sls](https://user-images.githubusercontent.com/74065243/108002899-0caf6980-7002-11eb-9a6a-9aaa31ec3365.png)
 
